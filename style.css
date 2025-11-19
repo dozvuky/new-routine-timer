@@ -1,0 +1,61 @@
+/* 폰트 정의 (@font-face)를 가장 위에 위치시킵니다. */
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.timer-widget {
+    width: 320px;
+    padding: 25px;
+    background-color: #FFF2C6; /* 배경색 */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'OngleipParkDahyeon', sans-serif;
+    text-align: center;
+}
+#currentTaskTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+#display {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #AAC4F5; /* 타이머 숫자 색상 */
+}
+#nextTaskInfo {
+    font-size: 0.9em;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+}
+.btn-group button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'OngleipParkDahyeon', sans-serif; /* 버튼 폰트 강제 적용 */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+#startStopBtn {
+    background-color: #FF8F8F; /* 시작 버튼 색상 */
+    color: white;
+}
+#checkBtn {
+    background-color: #B7A3E3; /* 완료 버튼 색상 */
+    color: white;
+}
+.btn-group button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
