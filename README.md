@@ -1,1 +1,10 @@
 # new-routine-timer
+<div class="timer-widget">
+    <div id="currentTaskTitle">로딩 중...</div>
+    <div id="display">00:00</div>
+    <div id="nextTaskInfo">데이터 로드 중...</div>
+    <div class="btn-group">
+        <button id="startStopBtn" disabled>시작</button>
+        <button id="checkBtn" disabled>완료 (다음)</button>
+    </div>
+</div>
